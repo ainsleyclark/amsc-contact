@@ -1,0 +1,17 @@
+{
+    "name": "ainsley/amsc-plugin",
+    "description": "Ainsleys Plugin",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Ainsley Clark",
+            "email": "info@ainsleyclark.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"Inc\\": "./include"}
+    }
+}

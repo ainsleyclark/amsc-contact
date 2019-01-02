@@ -1,0 +1,231 @@
+/*=============================================
+=                   Global                    =
+=============================================*/
+.asmc_wrap {
+  margin-top: 20px;
+  /*=====  End of Global  ======*/
+  /*=============================================
+=        Title, Description & Settings        =
+=============================================*/
+  /*=====  End of Title, Description & Settings  ======*/
+  /*=============================================
+=                Navigation Tabs              =
+=============================================*/
+  /*=============================================
+=                Admin Boxes                  =
+=============================================*/
+  /*=====  End of Admin Boxes  ======*/
+  /*=============================================
+=               Intergration Tab              =
+=============================================*/
+  /*=====  End of Intergration Tab  ======*/
+  /*=============================================
+=                   Email Tab                 =
+=============================================*/
+  /*=====  End of Email Tab  ======*/
+}
+
+.asmc_wrap h1 {
+  font-size: 28px !important;
+}
+
+.asmc_wrap h2 {
+  font-size: 20px;
+}
+
+.asmc_wrap h4 {
+  font-size: 14px !important;
+}
+
+.asmc_wrap p, .asmc_wrap li {
+  font-size: 14px !important;
+}
+
+.asmc_wrap h3, .asmc_wrap h4, .asmc_wrap .blue {
+  color: #157dae;
+}
+
+.asmc_wrap .red {
+  color: #FF0000;
+}
+
+.asmc_wrap .update-messages h2, .asmc_wrap .update-php h2, .asmc_wrap h4 {
+  margin: 0px 0 -4px 0 !important;
+}
+
+.asmc_wrap figcaption {
+  color: #157dae;
+  font-size: 14px;
+}
+
+.asmc_wrap h2::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #d9d9db;
+  top: 5px;
+  left: 0;
+}
+
+.asmc_wrap .description {
+  width: 400px;
+}
+
+.asmc_wrap input:not([type="submit"]), .asmc_wrap textarea {
+  padding: 7px;
+  width: 400px;
+}
+
+.asmc_wrap .title_container {
+  position: relative;
+  top: 5px;
+}
+
+.asmc_wrap .title_container .admin_icon {
+  float: left;
+  margin-right: 10px;
+  margin-top: -10px;
+  width: 40px;
+}
+
+.asmc_wrap .title_container h1 {
+  position: relative;
+  display: block;
+  top: 6px;
+}
+
+.asmc_wrap .title_container hr {
+  margin-bottom: 5px !important;
+}
+
+.asmc_wrap #setting-error-settings_updated {
+  margin: 12px 0 -7px 0;
+}
+
+.asmc_wrap .nav_tabs {
+  float: left;
+  width: 100%;
+  margin: 0;
+  list-style-type: none;
+  border-bottom: 1px solid #ddd;
+  background-color: #f1f1f1;
+}
+
+.asmc_wrap .nav_tabs li {
+  float: left;
+  margin-bottom: -1px;
+  border: 1px solid transparent;
+  border-radius: 6px 6px 0 0;
+  border-bottom-color: transparent;
+}
+
+.asmc_wrap .nav_tabs li a {
+  float: left;
+  margin-right: 2px;
+  line-height: 1.5;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 6px 6px 0 0;
+}
+
+.asmc_wrap .nav_tabs li a:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.asmc_wrap .nav_tabs li:hover {
+  border-color: #eee #eee #fff;
+}
+
+.asmc_wrap .nav_tabs li.active {
+  border: 1px solid #d9d9db;
+  border-bottom-color: transparent;
+}
+
+.asmc_wrap .nav_tabs li.active, .asmc_wrap .nav_tabs li:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.asmc_wrap .nav_tabs li.active a, .asmc_wrap .nav_tabs li:hover a {
+  color: #555;
+}
+
+.asmc_wrap .admin_box {
+  display: none;
+  background-color: #ffffff;
+  padding: 40px 20px 20px 20px;
+  border: 1px solid #d9d9db;
+}
+
+.asmc_wrap .admin_box.active {
+  display: block;
+}
+
+.asmc_wrap pre, .asmc_wrap code, .asmc_wrap kbd {
+  font-family: monospace, monospace;
+}
+
+.asmc_wrap figure {
+  margin: 0;
+  width: 20%;
+  min-width: 250px;
+  padding: 13px;
+  border: 1px solid #d9d9db;
+}
+
+.asmc_wrap figure figcaption {
+  margin: 0 0 8px 0;
+}
+
+.asmc_wrap figure pre {
+  margin: 5px 0 0 0;
+}
+
+.asmc_wrap figure code {
+  background-color: #eeeeee;
+}
+
+.asmc_wrap #tab_3 .admin_contact_box #contact_message {
+  resize: vertical;
+  height: 280px;
+  min-height: 200px;
+}
+
+.asmc_wrap #tab_3 .admin_container .left_box {
+  width: 45%;
+  min-width: 500px;
+  margin-right: 25px;
+  float: left;
+}
+
+.asmc_wrap #tab_3 .admin_container .right_box {
+  width: 50%;
+  min-width: 500px;
+  border: 1px solid #d9d9db;
+  padding: 0 10px;
+  float: right;
+  margin-top: 22px;
+}
+
+.asmc_wrap #tab_3 .admin_container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@media only screen and (max-width: 1336px) {
+  .asmc_wrap .right_box, .asmc_wrap .left_box {
+    float: none !important;
+    margin: 0;
+    width: 97% !important;
+  }
+  .asmc_wrap .right_box {
+    margin-bottom: 20px;
+  }
+}
+
+/*=====  End of AMSC Wrap  ======*/
+/*# sourceMappingURL=styles.css.map */

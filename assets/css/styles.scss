@@ -1,0 +1,250 @@
+$medgrey: #d9d9db;
+$wpblue: #157dae;
+$dangerred: #FF0000;
+
+/*=============================================
+=                   Global                    =
+=============================================*/
+.asmc_wrap {
+    margin-top: 20px;
+
+//Font Sizes
+h1 {    
+    font-size: 28px !important; 
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 14px !important;
+}
+
+p, li {
+    font-size: 14px !important;
+}
+
+//Colours
+h3, h4, .blue {
+    color: $wpblue;
+}
+
+.red {
+    color: $dangerred;
+}
+
+.update-messages h2, .update-php h2, h4 {
+    margin: 0px 0 -4px 0 !important;
+}
+
+//Code
+figcaption {
+    color: $wpblue;
+    font-size: 14px;
+}
+
+//Line after H2
+h2::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1px; 
+    background: #d9d9db; 
+    top: 5px;
+    left: 0;
+}
+
+//Italic Description
+.description {
+    width: 400px;
+}
+
+//Inputs
+input:not([type="submit"]), textarea {
+    padding: 7px;
+    width: 400px;
+}
+/*=====  End of Global  ======*/
+
+/*=============================================
+=        Title, Description & Settings        =
+=============================================*/
+//Title container (icon, h1 & hr)
+.title_container {
+    position: relative;
+    top: 5px;
+
+    .admin_icon {
+        float: left;
+        margin-right: 10px;
+        margin-top: -10px;
+        width: 40px;
+    }
+    h1 {
+        position: relative;
+        display: block;
+        top: 6px;
+    }
+    hr {
+        margin-bottom: 5px !important;
+    }
+}
+
+#setting-error-settings_updated {
+    margin: 12px 0 -7px 0;
+}
+/*=====  End of Title, Description & Settings  ======*/
+
+/*=============================================
+=                Navigation Tabs              =
+=============================================*/
+.nav_tabs {
+    float: left;
+    width: 100%;
+    margin: 0;
+    list-style-type: none;
+    border-bottom: 1px solid #ddd;
+    background-color: #f1f1f1;
+
+    li {
+        float: left;
+        margin-bottom: -1px;
+        border: 1px solid transparent;
+        border-radius: 6px 6px 0 0;
+        border-bottom-color: transparent;
+
+        a {
+            float: left; 
+            margin-right: 2px;
+            line-height: 1.5;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 6px 6px 0 0;
+        }
+
+        a:focus {
+            box-shadow: none;
+        }
+
+    }
+
+    li:hover, {
+        border-color: #eee #eee #fff;
+    } 
+
+    li.active{
+        border: 1px solid #d9d9db;
+        border-bottom-color: transparent;
+    }
+
+    li.active, li:hover {
+        cursor: pointer;
+        background-color: #fff;
+
+        a {
+            color: #555;
+        }
+    }
+
+}
+
+/*=============================================
+=                Admin Boxes                  =
+=============================================*/
+.admin_box {
+    display: none;
+    background-color: #ffffff;
+    padding: 40px 20px 20px 20px;
+    border: 1px solid #d9d9db; 
+}
+.admin_box.active {
+    display: block;
+}
+
+/*=====  End of Admin Boxes  ======*/
+
+/*=============================================
+=               Intergration Tab              =
+=============================================*/
+pre, code, kbd {
+    font-family: monospace, monospace;
+}
+
+figure {
+    margin: 0;
+    width: 20%;
+    min-width: 250px;
+    padding: 13px;
+    border: 1px solid $medgrey;
+
+    figcaption {
+        margin: 0 0 8px 0;
+    }
+    pre {
+        margin: 5px 0 0 0;
+
+    }
+    code {
+        background-color: #eeeeee;
+    }
+    
+}
+
+/*=====  End of Intergration Tab  ======*/
+
+/*=============================================
+=                   Email Tab                 =
+=============================================*/
+#tab_3 {
+
+    .admin_contact_box {
+    
+        #contact_message {
+            resize: vertical;
+            height: 280px;
+            min-height: 200px;
+        }
+    }
+
+    .admin_container {
+
+        .left_box {
+            width: 45%;
+            min-width: 500px;
+            margin-right: 25px;
+            float: left;
+        }
+        .right_box {
+            width: 50%;
+            min-width: 500px;
+            border: 1px solid $medgrey;
+            padding: 0 10px;
+            float: right;
+            margin-top: 22px;
+        }
+    
+    }
+    .admin_container::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+//Unfloat the left and right boxes for tablet & phone
+@media only screen and (max-width: 1336px) {
+    .right_box, .left_box {
+        float: none !important;
+        margin: 0;
+        width: 97% !important;
+    }
+    .right_box {
+        margin-bottom: 20px;
+    }
+}
+/*=====  End of Email Tab  ======*/
+
+}
+/*=====  End of AMSC Wrap  ======*/
